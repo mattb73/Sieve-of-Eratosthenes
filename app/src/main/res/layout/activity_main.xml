@@ -41,6 +41,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:hint="Integer lower than 100000000"/>
         <Button
             android:id="@+id/main_button"
