@@ -9,5 +9,7 @@
             limit of your choice!</string>
     <string name="input_prompt">Enter your upper limit (inclusive): </string>
     <string name="go">GO!</string>
+    <string name="title_activity_display_prime_list">DisplayPrimeListActivity</string>
+    <string name="prime_list_header">List of prime numbers less than or equal to </string>
 
 </resources>
