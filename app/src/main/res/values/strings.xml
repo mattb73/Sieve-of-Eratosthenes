@@ -4,5 +4,10 @@
     <string name="app_name">Eratosthenes Prime</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="welcome">Welcome!</string>
+    <string name="intro">This is an app that quickly generates a list of prime numbers up to a
+            limit of your choice!</string>
+    <string name="input_prompt">Enter your upper limit (inclusive): </string>
+    <string name="go">GO!</string>
 
 </resources>
