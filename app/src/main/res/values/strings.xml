@@ -12,4 +12,10 @@
     <string name="title_activity_display_prime_list">DisplayPrimeListActivity</string>
     <string name="prime_list_header">List of prime numbers less than or equal to </string>
 
+    <!--String resources for the alert dialog-->
+    <string name="alert_title">No Limit?</string>
+    <string name="alert_message">Please enter a number between 2 and 15,000,000</string>
+    <string name="ok">OK</string>
+    <string name="generate_random">Pick one for me!</string>
+
 </resources>

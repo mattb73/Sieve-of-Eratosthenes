@@ -9,6 +9,8 @@
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="0.4"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         android:src="@drawable/eratostenes_gold"
         />
     <LinearLayout
@@ -42,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"
-            android:hint="Integer lower than 100000000"/>
+            android:hint="Integer lower than 15,000,000"/>
         <Button
             android:id="@+id/main_button"
             android:layout_gravity="center_horizontal"
