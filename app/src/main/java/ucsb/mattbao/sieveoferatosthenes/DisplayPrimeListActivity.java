@@ -22,6 +22,7 @@ public class DisplayPrimeListActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_prime_list);
         primeList = (ListView) findViewById(R.id.prime_list);
+        primeList.setDivider(null);
         limitDisplay = (TextView) findViewById(R.id.display_upperLimit);
 
         Intent intent = getIntent();
