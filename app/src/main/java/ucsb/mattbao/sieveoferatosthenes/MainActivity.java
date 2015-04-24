@@ -34,15 +34,20 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 if(upperLimitInput.getText().length() > 0){ // If input is not empty
-                    upperLimit = Integer.valueOf(upperLimitInput.getText().toString());
-                    // Check upperLimit to make sure it's not over 15,000,000 (will result in "out
-                    // of memory" error if over)
-                    if(upperLimit > 15000000){
+                    // First (roughly) check if number is over integer limit
+                    if(upperLimitInput.getText().length() > 9){
                         overLimitAlert();
-                    } else {
-                        Intent intent = new Intent(getBaseContext(), DisplayPrimeListActivity.class);
-                        intent.putExtra("upperLimit", upperLimit);
-                        startActivity(intent);
+                    }else{
+                        upperLimit = Integer.valueOf(upperLimitInput.getText().toString());
+                        // Check upperLimit to make sure it's not over 15,000,000 (will result in "out
+                        // of memory" error if over)
+                        if(upperLimit > 15000000){
+                            overLimitAlert();
+                        } else {
+                            Intent intent = new Intent(getBaseContext(), DisplayPrimeListActivity.class);
+                            intent.putExtra("upperLimit", upperLimit);
+                            startActivity(intent);
+                        }
                     }
                 } else { // If input is empty display an alert
                     emptyInputAlert();
