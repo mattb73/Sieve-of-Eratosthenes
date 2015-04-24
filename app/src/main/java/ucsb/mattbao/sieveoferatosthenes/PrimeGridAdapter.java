@@ -50,9 +50,12 @@ public class PrimeGridAdapter extends BaseAdapter{
         number = (TextView) convertView.findViewById(R.id.grid_number);
         number.setText(String.valueOf(position));
         if(!numberList[position]){ // If prime number, highlight background
-            number.setBackgroundColor(Color.rgb(255, 148, 148));
+            //number.setBackgroundColor(Color.rgb(255, 148, 148));
+            number.setBackgroundResource(R.drawable.button_background);
+            number.setTextColor(Color.WHITE);
         } else {
             number.setBackgroundColor(Color.TRANSPARENT);
+            number.setTextColor(Color.BLACK);
         }
         return convertView;
     }

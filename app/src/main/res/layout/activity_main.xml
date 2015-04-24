@@ -68,10 +68,12 @@
 
             <Button
                 android:id="@+id/main_button"
+                android:background="@drawable/button_background"
                 android:layout_gravity="center_vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
                 android:textSize="20sp"
+                android:textColor="#ffffff"
                 android:textAllCaps="false"
                 android:text="@string/go"/>
         </LinearLayout>
@@ -89,9 +91,11 @@
             android:id="@+id/generate_random_button"
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:textSize="20sp"
             android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_background"
             android:text="@string/generate_random"/>
 
     </LinearLayout>

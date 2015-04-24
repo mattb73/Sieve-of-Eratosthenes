@@ -72,7 +72,7 @@ public class MainActivity extends ActionBarActivity {
                         upperLimit = Integer.valueOf(upperLimitInput.getText().toString());
                         // Check upperLimit to make sure it's not over 15,000,000 (will result in "out
                         // of memory" error if over)
-                        if(upperLimit > 15000000){
+                        if(upperLimit > 15000000 ||upperLimit < 2){
                             overLimitAlert();
                         } else {
                             Intent intent = new Intent(getBaseContext(), DisplayPrimeNumberActivity.class);

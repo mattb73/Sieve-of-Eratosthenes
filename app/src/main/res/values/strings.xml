@@ -16,7 +16,7 @@
     <string name="prime_list_header">Prime numbers less than or equal to: </string>
 
     <!--String resources for the over limit alert dialog-->
-    <string name="over_alert_title">Let\'s not be overambitious...</string>
+    <string name="over_alert_title">Let\'s try to stay in range</string>
     <string name="over_alert_message">Please enter a number between 2 and 15,000,000.</string>
     <string name="ok">OK</string>
 
