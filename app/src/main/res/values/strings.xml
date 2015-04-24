@@ -13,10 +13,14 @@
     <string name="title_activity_display_prime_list">Results</string>
     <string name="prime_list_header">List of prime numbers less than or equal to </string>
 
-    <!--String resources for the alert dialog-->
-    <string name="alert_title">No Limit?</string>
-    <string name="alert_message">Please enter a number between 2 and 15,000,000</string>
+    <!--String resources for the over limit alert dialog-->
+    <string name="over_alert_title">Let\'s not be over-ambitious...</string>
+    <string name="over_alert_message">Please enter a number between 2 and 15,000,000.</string>
     <string name="ok">OK</string>
     <string name="generate_random">Pick one for me!</string>
+
+    <!--String resources for the empty alert dialog-->
+    <string name="empty_alert_title">No Limit?</string>
+    <string name="empty_alert_message">Please enter a number as your upper limit.</string>
 
 </resources>
