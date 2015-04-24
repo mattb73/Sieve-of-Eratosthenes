@@ -8,16 +8,17 @@
     <string name="intro">This is an app that quickly generates a list of prime numbers up to a
             limit of your choice!</string>
     <string name="input_prompt">Enter your upper limit (inclusive): </string>
+    <string name="or">OR</string>
     <string name="input_hint">Enter number here</string>
     <string name="go">GO!</string>
+    <string name="generate_random">Pick a Number For Me</string>
     <string name="title_activity_display_prime_list">Results</string>
     <string name="prime_list_header">List of prime numbers less than or equal to </string>
 
     <!--String resources for the over limit alert dialog-->
-    <string name="over_alert_title">Let\'s not be over-ambitious...</string>
+    <string name="over_alert_title">Let\'s not be overambitious...</string>
     <string name="over_alert_message">Please enter a number between 2 and 15,000,000.</string>
     <string name="ok">OK</string>
-    <string name="generate_random">Pick one for me!</string>
 
     <!--String resources for the empty alert dialog-->
     <string name="empty_alert_title">No Limit?</string>

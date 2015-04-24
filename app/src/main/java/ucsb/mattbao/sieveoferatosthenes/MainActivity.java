@@ -19,6 +19,7 @@ public class MainActivity extends ActionBarActivity {
     private static int upperLimit;
 
     private Button goButton;
+    private Button generateRandomButton;
     private EditText upperLimitInput;
 
 
@@ -27,6 +28,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         goButton = (Button) findViewById(R.id.main_button);
+        generateRandomButton = (Button) findViewById(R.id.generate_random_button);
         upperLimitInput = (EditText) findViewById(R.id.input_upper_limit);
         goButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,7 +47,14 @@ public class MainActivity extends ActionBarActivity {
                 } else { // If input is empty display an alert
                     emptyInputAlert();
                 }
-
+            }
+        });
+        generateRandomButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Random random = new Random();
+                //Set input to be random number between 2 and 1002
+                upperLimitInput.setText(String.valueOf(random.nextInt(1000)+2));
             }
         });
     }
@@ -61,15 +70,6 @@ public class MainActivity extends ActionBarActivity {
                 dialog.dismiss();
             }
         });
-        builder.setNeutralButton(R.string.generate_random, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                Random random = new Random();
-                //Set input to be random number between 2 and 1002
-                upperLimitInput.setText(String.valueOf(random.nextInt(1000)+2));
-                dialog.dismiss();
-            }
-        });
         builder.create().show();
     }
 
@@ -81,15 +81,6 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 //Automatically dismisses alert dialog
-            }
-        });
-        builder.setNeutralButton(R.string.generate_random, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                Random random = new Random();
-                //Set input to be random number between 2 and 1002
-                upperLimitInput.setText(String.valueOf(random.nextInt(1000)+2));
-                dialog.dismiss();
             }
         });
         builder.create().show();
