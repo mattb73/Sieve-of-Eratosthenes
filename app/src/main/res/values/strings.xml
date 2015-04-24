@@ -6,7 +6,7 @@
     <string name="action_settings">Settings</string>
     <string name="welcome">Welcome!</string>
     <string name="intro">This is an app that quickly generates a list of prime numbers up to a
-            limit of your choice!</string>
+            limit of your choice, using an algorithm called Sieve of Eratosthenes.</string>
     <string name="input_prompt">Enter your upper limit (inclusive): </string>
     <string name="or">OR</string>
     <string name="input_hint">Enter number here</string>

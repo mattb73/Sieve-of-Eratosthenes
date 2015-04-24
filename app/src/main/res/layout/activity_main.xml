@@ -91,7 +91,7 @@
             android:id="@+id/generate_random_button"
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:textSize="20sp"
             android:textAllCaps="false"
             android:textColor="#ffffff"
