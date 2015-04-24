@@ -24,4 +24,9 @@
     <string name="empty_alert_title">No Limit?</string>
     <string name="empty_alert_message">Please enter a number as your upper limit.</string>
 
+    <!--String resources for the action bar-->
+    <string name="action_list_view">List View</string>
+    <string name="action_grid_view">Grid View</string>
+    <string name="overflow">Overflow</string>
+
 </resources>

@@ -1,5 +1,6 @@
 package ucsb.mattbao.sieveoferatosthenes;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -36,6 +37,7 @@ public class DisplayPrimeListActivity extends ActionBarActivity {
                                                                       mPrimeGenerator.getPrimeList());
             primeList.setAdapter(adapter);
         }
+
     }
 
 
@@ -43,7 +45,7 @@ public class DisplayPrimeListActivity extends ActionBarActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_display_prime_list, menu);
-        return true;
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override

@@ -2,7 +2,30 @@
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools"
       tools:context="ucsb.mattbao.sieveoferatosthenes.DisplayPrimeListActivity">
-    <item android:id="@+id/action_settings"
+
+    <item android:id="@+id/action_list_view"
+          android:title="@string/action_list_view"
+          android:icon="@drawable/ic_action_view_as_list"
+          app:showAsAction="always|withText"/>
+
+    <item android:id="@+id/action_gird_view"
+          android:title="@string/action_grid_view"
+          android:icon="@drawable/ic_action_view_as_grid"
+          app:showAsAction="always|withText"/>
+
+    <item android:id="@+id/action_overflow"
+          android:title="@string/overflow"
+          android:icon="@drawable/ic_action_overflow"
+          app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/action_settings"
+                  android:title="@string/action_settings"
+                  android:orderInCategory="100"
+                  app:showAsAction="never"/>
+        </menu>
+    </item>
+
+    <item android:id="@+id/action_settings_hardware_key"
           android:title="@string/action_settings"
           android:orderInCategory="100"
           app:showAsAction="never"/>

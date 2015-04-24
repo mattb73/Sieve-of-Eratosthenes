@@ -19,6 +19,7 @@
         </activity>
         <activity
             android:name=".DisplayPrimeListActivity"
+            android:parentActivityName=".MainActivity"
             android:label="@string/title_activity_display_prime_list"
             android:screenOrientation="portrait">
         </activity>
