@@ -13,7 +13,7 @@
     <string name="go">GO!</string>
     <string name="generate_random">Pick a Number For Me</string>
     <string name="title_activity_display_prime_list">Results</string>
-    <string name="prime_list_header">List of prime numbers less than or equal to: </string>
+    <string name="prime_list_header">Prime numbers less than or equal to: </string>
 
     <!--String resources for the over limit alert dialog-->
     <string name="over_alert_title">Let\'s not be overambitious...</string>

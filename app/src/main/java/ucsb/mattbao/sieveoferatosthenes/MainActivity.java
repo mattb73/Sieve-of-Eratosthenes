@@ -75,7 +75,7 @@ public class MainActivity extends ActionBarActivity {
                         if(upperLimit > 15000000){
                             overLimitAlert();
                         } else {
-                            Intent intent = new Intent(getBaseContext(), DisplayPrimeListActivity.class);
+                            Intent intent = new Intent(getBaseContext(), DisplayPrimeNumberActivity.class);
                             intent.putExtra("upperLimit", upperLimit);
                             startActivity(intent);
                         }

@@ -3,7 +3,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation = "vertical"
-                tools:context="ucsb.mattbao.sieveoferatosthenes.DisplayPrimeListActivity">
+                tools:context="ucsb.mattbao.sieveoferatosthenes.DisplayPrimeNumberActivity">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -37,5 +37,18 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         />
+    
+    <GridView
+        android:id="@+id/prime_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnWidth="50dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:visibility="gone"/>
 
 </LinearLayout>

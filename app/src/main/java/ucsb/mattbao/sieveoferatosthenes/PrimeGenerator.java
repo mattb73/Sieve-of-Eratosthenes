@@ -69,4 +69,9 @@ public class PrimeGenerator {
         }
         return primeList;
     }
+
+    // Returns numberList
+    public boolean[] getNumberList(){
+        return this.numberList;
+    }
 }

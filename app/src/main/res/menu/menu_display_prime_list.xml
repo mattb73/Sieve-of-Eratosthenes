@@ -1,14 +1,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools"
-      tools:context="ucsb.mattbao.sieveoferatosthenes.DisplayPrimeListActivity">
+      tools:context="ucsb.mattbao.sieveoferatosthenes.DisplayPrimeNumberActivity">
 
     <item android:id="@+id/action_list_view"
           android:title="@string/action_list_view"
           android:icon="@drawable/ic_action_view_as_list"
           app:showAsAction="always|withText"/>
 
-    <item android:id="@+id/action_gird_view"
+    <item android:id="@+id/action_grid_view"
           android:title="@string/action_grid_view"
           android:icon="@drawable/ic_action_view_as_grid"
           app:showAsAction="always|withText"/>
