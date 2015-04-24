@@ -6,11 +6,14 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 import java.util.Random;
 
@@ -20,6 +23,7 @@ public class MainActivity extends ActionBarActivity {
 
     private Button goButton;
     private Button generateRandomButton;
+    private ImageButton clearButtonX;
     private EditText upperLimitInput;
 
 
@@ -30,6 +34,33 @@ public class MainActivity extends ActionBarActivity {
         goButton = (Button) findViewById(R.id.main_button);
         generateRandomButton = (Button) findViewById(R.id.generate_random_button);
         upperLimitInput = (EditText) findViewById(R.id.input_upper_limit);
+        clearButtonX = (ImageButton) findViewById(R.id.clear_button_x);
+
+        //The following is for toggling the visibility of the clear-input image button on
+        //the right side of the input box: when not empty, display the button which will
+        //clear the contents when clicked.
+        upperLimitInput.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if(upperLimitInput.getText().length()>0){
+                    clearButtonX.setVisibility(View.VISIBLE);
+                } else {
+                    clearButtonX.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+
+        //Performs a series of input validity checks before starting DisplayPrimeListActivity.
         goButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,6 +85,8 @@ public class MainActivity extends ActionBarActivity {
                 }
             }
         });
+
+        //Generates a random number as the limit for user.
         generateRandomButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,6 +95,15 @@ public class MainActivity extends ActionBarActivity {
                 upperLimitInput.setText(String.valueOf(random.nextInt(1000)+2));
             }
         });
+
+        //Clears the input box.
+        clearButtonX.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                upperLimitInput.setText("");
+            }
+        });
+
     }
 
     // Displays alert if user input is too high (over 15,000,000)
