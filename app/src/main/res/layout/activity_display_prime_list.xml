@@ -41,12 +41,14 @@
         />
     
     <GridView
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
         android:id="@+id/prime_grid"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:columnWidth="50dp"
-        android:numColumns="auto_fit"
+        android:numColumns="5"
         android:verticalSpacing="10dp"
         android:horizontalSpacing="10dp"
         android:stretchMode="columnWidth"
