@@ -118,7 +118,7 @@ public class MainActivity extends ActionBarActivity {
         overLimitAlert.show(getSupportFragmentManager(),"Over Limit Alert");
     }
 
-    // Displays alert if user input is empty; Also offers to generate random number.
+    // Displays alert if user input is empty
     private void emptyInputAlert(){
         EmptyInputAlertFragment emptyAlert = new EmptyInputAlertFragment();
         emptyAlert.show(getSupportFragmentManager(), "Empty Input Alert");
