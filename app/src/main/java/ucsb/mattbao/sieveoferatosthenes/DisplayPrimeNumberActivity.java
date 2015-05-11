@@ -35,11 +35,13 @@ public class DisplayPrimeNumberActivity extends ActionBarActivity {
         if(intent.hasExtra("upperLimit")){
             int upperLimit = intent.getIntExtra("upperLimit",0);
             limitDisplay.setText(String.valueOf(upperLimit));
-            mPrimeGenerator = new PrimeGenerator(intent.getIntExtra("upperLimit",0));
+            mPrimeGenerator = new PrimeGenerator(upperLimit);
+
             ArrayAdapter<Integer> mListAdapter = new ArrayAdapter<Integer>(getBaseContext(),
                                                                       R.layout.prime_list_model,
                                                                       R.id.prime_number,
                                                                       mPrimeGenerator.getPrimeList());
+
             primeList.setAdapter(mListAdapter);
 
             PrimeGridAdapter mGridAdapter = new PrimeGridAdapter(getBaseContext(),

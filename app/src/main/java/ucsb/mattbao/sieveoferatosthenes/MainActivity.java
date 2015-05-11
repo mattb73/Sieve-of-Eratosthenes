@@ -71,7 +71,7 @@ public class MainActivity extends ActionBarActivity {
                     }else{
                         upperLimit = Integer.valueOf(upperLimitInput.getText().toString());
                         // Check upperLimit to make sure it's not over 15,000,000 (will result in "out
-                        // of memory" error if over)
+                        // of memory" error if over) or less than 2
                         if(upperLimit > 15000000 ||upperLimit < 2){
                             overLimitAlert();
                         } else {
@@ -106,7 +106,7 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
-    // Displays alert if user input is too high (over 15,000,000)
+    // Displays alert if user input is too high (over 15,000,000) or too low (less than 2)
     private void overLimitAlert(){
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
         builder.setTitle(R.string.over_alert_title).setMessage(R.string.over_alert_message);

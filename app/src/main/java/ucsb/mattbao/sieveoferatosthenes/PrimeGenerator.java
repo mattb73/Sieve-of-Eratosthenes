@@ -53,9 +53,9 @@ public class PrimeGenerator {
     // Returns the list of numbers as an ArrayList<Integer>
     public ArrayList<Integer> getPrimeList() {
         for (int i = 2; i <= Math.sqrt(this.upperLimit); i++) {
-            if (!this.numberList[i]) {
+            if (!this.numberList[i]) { // If not marked
                 for (int j = i * i; j <= this.upperLimit; j += i) {
-                    if (!this.numberList[j]) {
+                    if (!this.numberList[j]) { // If not marked
                         this.numberList[j] = true;
                     }
                 }
@@ -63,7 +63,7 @@ public class PrimeGenerator {
         }
         // Supports range: [lowerLimit, upperLimit]
         for (int i = this.lowerLimit; i <= this.upperLimit; i++) {
-            if (!this.numberList[i]) {
+            if (!this.numberList[i]) { // If not marked true, is prime number
                 primeList.add(i);
             }
         }
